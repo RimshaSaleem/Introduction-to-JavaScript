@@ -18,11 +18,11 @@ Do the following:
    HINT: no function required
 */
 let votingAge = 19;
-if(votingAge > 18){
-   console.log('true');
+if(votingAge >=18){
+   console.log(true);
 }
 else{
-  console.log('false');
+  console.log(false);
 }
 
 
@@ -38,7 +38,12 @@ Do the following:
 
    HINT: no function required
 */
-
+let name='Rimsha';
+let fname='Saleem';
+if(fname === 'Saleem'){
+  name = 'Anzalna';
+}
+console.log(name);
 
 
 
