@@ -170,30 +170,30 @@ Use the game function below to do the following:
 */
 let computer = Math.random();
 if(computer <= 0.09){
-  computer = 'Rock';
+  computer = 'rock';
 }
 else if(computer <= 0.40){
-  computer = 'Paper';
+  computer = 'paper';
 }
 else if(computer > 0.40){
-  computer = 'Scissors';
+  computer = 'scissors';
 }
 
 function game(user, computer){
     if (user === computer){
       return  "it's a tie";
     }
-    else if(user ==='Rock' && computer === 'Scissors'){
+    else if(user ==='rock' && computer === 'scissors'){
       return 'you win';
     }
-    else if(user ==='Scissors' && computer === 'Paper'){
+    else if(user ==='scissors' && computer === 'paper'){
       return 'you win!';
     }
     else{
       return 'you lose!';
     }
 }
-console.log(game('Scissors',computer));
+console.log(game('paper',computer));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -221,8 +221,8 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(centimeter){
-  return centimeter/30.48;
+function feet(cm){
+  return cm/30.48;
   }
  console.log(feet(5));
 
