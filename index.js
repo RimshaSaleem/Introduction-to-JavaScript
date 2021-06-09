@@ -60,7 +60,7 @@ Do the following:
 */
    let a = "1999";
   //  let result = parseInt(a);
-   console.log("value is " ,Number());
+   console.log("value is " , Number(a));
 
 
 
@@ -141,7 +141,7 @@ function hungryDog(weight, age){
     return weight * 0.10;
   }
   else{
-    return 'plaese try again'
+    return 'plaese try again';
   }
 
   }
@@ -170,30 +170,30 @@ Use the game function below to do the following:
 */
 let computer = Math.random();
 if(computer <= 0.09){
-  computer = 'rock';
+  computer = `rock`;
 }
 else if(computer <= 0.40){
-  computer = 'paper';
+  computer = `paper`;
 }
 else if(computer > 0.40){
-  computer = 'scissors';
+  computer = `scissors`;
 }
 
 function game(user, computer){
     if (user === computer){
-      return  "it's a tie";
+      return  `it's a tie`;
     }
-    else if(user ==='rock' && computer === 'scissors'){
-      return 'you win';
+    else if(user ==='rock' && computer === 'scissor'){
+      return `you win!`;
     }
-    else if(user ==='scissors' && computer === 'paper'){
-      return 'you win!';
+    else if(user ===`scissors` && computer === `paper`){
+      return `you win!`;
     }
     else{
-      return 'you lose!';
+      return `you lose!`;
     }
 }
-console.log(game('paper',computer));
+console.log(game(`scissors`, computer));
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -237,11 +237,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(number){
-        for(let i=number; i > 0; i--){
+function annoyingSong(numbers){
+        for(let i = numbers; i >= 0; i--){
           return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`;
         }
   }
+  console.log(annoyingSong(2));
   
 
 
@@ -260,23 +261,27 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-  function grade(total_number){
-   if(total_number >=90){
+  function grade(numbers){
+   if(numbers >=90){
      return 'you got an A';
   }
-   else if(total_number < 90 && total_number >= 80){
+   else if(numbers < 90 && numbers >= 80){
     return 'you got a B';
      }
-    else if(total_number < 80 && total_number >= 70){
+    else if(numbers < 80 && numbers >= 70){
      return 'you got a C';
        }
-   else if(total_number < 70 && total_number >= 60){
+   else if(numbers < 70 && numbers >= 60){
      return 'you got a D';
    }
-   else if(total_number < 60){
-     return 'you got a F';
+  //  else if(numbers < 60){
+  //    return 'you got a F';
+  else{
+    return 'you got an F';
+
   }
   }
+  
   console.log(grade(70));
   
   
