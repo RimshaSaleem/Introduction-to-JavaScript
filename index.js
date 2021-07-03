@@ -27,6 +27,9 @@ else{
 
 
 /*
+}
+
+
 
 Task 1b - Values
 
@@ -298,9 +301,15 @@ Using the vowelCounter function below do the following:
   HINT - try looking up the .includes() method
 */
 
-
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+const vowel =['a','e','i','o','u'];
+function vowelCounter(str) {
+  let result =0;
+    for(let i=0; i<str; i++){
+      if(vowel.includes(str)){
+        result++
+      }
+    }
+    return vowel;
 }
 
 
